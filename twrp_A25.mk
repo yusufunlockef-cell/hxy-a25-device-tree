@@ -9,14 +9,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from A25 device
 $(call inherit-product, device/hxy/A25/device.mk)
 
 PRODUCT_DEVICE := A25
-PRODUCT_NAME := omni_A25
+PRODUCT_NAME := twrp_A25
 PRODUCT_BRAND := Trident
 PRODUCT_MODEL := A25
 PRODUCT_MANUFACTURER := hxy
